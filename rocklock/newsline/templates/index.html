@@ -1,0 +1,13 @@
+<DOCTYPE=html>
+<head>
+	<title>
+		RockLock - все о скалолазании
+	</title>
+</head>
+<body>
+	{% for news in newsline %}
+	<h1>{{news.title}}</h1>
+	<p>{{news.body}}</p>
+	<p>{{news.datetime}}</p>
+	{% endfor %}
+</body>
