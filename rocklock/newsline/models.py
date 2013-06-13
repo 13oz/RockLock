@@ -4,6 +4,7 @@ from django.contrib import admin
 class NewsPost(models.Model):
 	title=models.CharField(max_length=75)
 	body=models.TextField()
+	author=models.CharField(max_length=25)
 	datetime=models.DateTimeField(auto_now=True)
 
 	class Meta():
