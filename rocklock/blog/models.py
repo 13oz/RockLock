@@ -16,30 +16,30 @@ class Users(models.Model):
 	userSex = models.CharField(max_length = 1, choices = sex)
 	
 	#TODO - add access rights
+	#TODO - подумать над выводом.
+	def __unicode__(self):
+		return self.login
 
 class Hub(models.Model):
 	hubName = models.CharField(max_length = 15, unique = True)
 	hubAdmin = models.OneToOneField(Users)
 
+	def __unicode__(self):
+		return self.hubName
+
+#TODO add ManyToMany to Post model
 class Tag(models.Model):
 	tagName = models.CharField(max_length = 20, unique = True)
+	postName = #ManyToMany relation
 
-class Post(models.Model): #testing - rtfm relations
-	postHub = models.CharField(max_length = 15)
-	postTag = models.CharField(max_length = 20)
+	def __unicode__(self):
+		return self.tagName
 
 class PostContent(models.Model):
 	postTitle = models.CharField(max_length = 40)
 	postText = models.TextField()
 	postAuthor = models.CharField(max_length = 40)
+	postHub = #OneToMany relation
 
-"""
-class BlogPost(models.Model):
-	title = models.CharField(max_length = 150)
-	body = models.TextField()
-	timestamp = models.DateTimeField()
-
-class BlogPostAdmin(admin.ModelAdmin):
-	list_display = ('title', 'timestamp')
-
-admin.site.register(BlogPost, BlogPostAdmin)"""
+	def __unicode__(self):
+		return self.postTitle

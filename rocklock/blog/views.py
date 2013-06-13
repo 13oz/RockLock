@@ -1,7 +1,7 @@
 # Create your views here.
 from django.template import loader,Context
 from django.http import HttpResponse
-from rocklock.blog.models import BlogPost
+from rocklock.blog.models import Post, PostContent
 
 def archive(request):
 	posts = BlogPost.objects.all
