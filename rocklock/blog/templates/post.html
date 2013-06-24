@@ -4,9 +4,7 @@
 	<title>Rock Squirrel's blog</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
-	
-	{% for post in posts %}
+<body>	
 	<div backgroung-color="grey">
 		<h2>{{post.postTitle}}</h2>
 		<hr>
@@ -15,7 +13,6 @@
 		<p>{{post.postText}}</p>
 		<hr>
 		<p>{{post.postAuthor}}</p>
-	{% endfor %}
 	</div>
 </body>
 </html>

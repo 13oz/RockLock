@@ -4,12 +4,24 @@
 		"selected_items":
 		[
 			[
-				"HttpR",
-				"HttpResponseRedirect"
+				"get",
+				"get_template"
+			],
+			[
+				"Htt",
+				"HttpResponse"
 			],
 			[
 				"re",
-				"request"
+				"return"
+			],
+			[
+				"st",
+				"static"
+			],
+			[
+				"HttpR",
+				"HttpResponseRedirect"
 			],
 			[
 				"Ma",
@@ -31,7 +43,7 @@
 			"file": "settings.py",
 			"settings":
 			{
-				"buffer_size": 5394,
+				"buffer_size": 5395,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +59,7 @@
 			"file": "blog/urls.py",
 			"settings":
 			{
-				"buffer_size": 128,
+				"buffer_size": 337,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +67,7 @@
 			"file": "blog/views.py",
 			"settings":
 			{
-				"buffer_size": 947,
+				"buffer_size": 1191,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,15 +75,31 @@
 			"file": "blog/templates/archive.html",
 			"settings":
 			{
-				"buffer_size": 340,
+				"buffer_size": 870,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "blog/templates/main.html",
+			"file": "blog/templates/index.html",
 			"settings":
 			{
-				"buffer_size": 323,
+				"buffer_size": 7298,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/templates/style.css",
+			"settings":
+			{
+				"buffer_size": 7003,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/templates/post.html",
+			"settings":
+			{
+				"buffer_size": 354,
 				"line_ending": "Windows"
 			}
 		},
@@ -87,7 +115,7 @@
 			"file": "blog/templates/new_post.html",
 			"settings":
 			{
-				"buffer_size": 141,
+				"buffer_size": 239,
 				"line_ending": "Windows"
 			}
 		}
@@ -168,7 +196,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -176,15 +204,15 @@
 					"file": "settings.py",
 					"settings":
 					{
-						"buffer_size": 5394,
+						"buffer_size": 5395,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								299,
-								299
+								2288,
+								2288
 							]
 						],
 						"settings":
@@ -194,7 +222,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1440.0,
+						"translation.y": 765.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -230,15 +258,15 @@
 					"file": "blog/urls.py",
 					"settings":
 					{
-						"buffer_size": 128,
+						"buffer_size": 337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								108,
-								108
+								200,
+								200
 							]
 						],
 						"settings":
@@ -256,20 +284,21 @@
 					"file": "blog/views.py",
 					"settings":
 					{
-						"buffer_size": 947,
+						"buffer_size": 1191,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								815,
-								815
+								662,
+								662
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -282,15 +311,15 @@
 					"file": "blog/templates/archive.html",
 					"settings":
 					{
-						"buffer_size": 340,
+						"buffer_size": 870,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								332,
-								332
+								157,
+								157
 							]
 						],
 						"settings":
@@ -299,25 +328,80 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "blog/templates/main.html",
+					"file": "blog/templates/index.html",
 					"settings":
 					{
-						"buffer_size": 323,
+						"buffer_size": 7298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
+								2913,
+								2921
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "blog/templates/style.css",
+					"settings":
+					{
+						"buffer_size": 7003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1073,
+								1073
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "blog/templates/post.html",
+					"settings":
+					{
+						"buffer_size": 354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
 							]
 						],
 						"settings":
@@ -332,7 +416,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "blog/models.py",
 					"settings":
 					{
@@ -359,19 +443,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "blog/templates/new_post.html",
 					"settings":
 					{
-						"buffer_size": 141,
+						"buffer_size": 239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								123,
-								123
+								115,
+								115
 							]
 						],
 						"settings":

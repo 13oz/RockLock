@@ -2,19 +2,26 @@
 <html>
 <head>
 	<title>Rock Squirrel's blog</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Andika|Comfortaa&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>Archive<h1>
-	{% for post in posts %}
-	<div backgroung-color="grey">
-		<h2>{{post.postTitle}}</h2>
-		<hr>
-		<p align="right">{{post.postHub}}</p>
-		<hr>
-		<p>{{post.postText}}</p>
-		<hr>
-		<p>{{post.postAuthor}}</p>
-	{% endfor %}
+	<div style="font-family:Andika, width:68%; position:absolute; left 5%; right:26%; float: right" >
+		<h1 align="center">Архив<h1>
+			{% for post in posts %}
+			<div style="border-width:thin; border-style:solid; border-radius: 10px;">
+				<h2>{{post.postTitle}}</h2>
+				<hr>
+				<p align="right">{{post.postHub}}</p>
+				<hr>
+				{{post.postText}}
+				<hr>
+				<p>{{post.postDate}}</p>
+				<p>{{post.postAuthor}}</p>
+			</div>
+			<p>Тут могла быть ваша реклама...</p>
+			{% endfor %}
+
 	</div>
+	<div style="background-color:grey; width:25%; float: right">Тут будет календарег и новостная лента</div>
 </body>
 </html>
